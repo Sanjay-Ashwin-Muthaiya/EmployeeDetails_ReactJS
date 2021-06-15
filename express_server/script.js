@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-var router=express.Router();
+var router = express.Router();
 //app.use(express.json);
 var bodyParser = require("body-parser");
 app.use(bodyParser());
@@ -95,4 +95,4 @@ app.delete('/home/personDetails/:id', (req, res) => {
 
 const port = 9000;
 app.listen(port, () => console.log("Server started"))
-module.exports = { router,app, validateId };
+module.exports = { router, app, validateId };
